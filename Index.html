@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="website icon" type="png" href="D:\Java script\digital clock\stopwatch.png">
+    <link rel="stylesheet" href="D:\Java script\digital clock\style.css">
+    <script src="D:\Java script\digital clock\javascriptclock.js"></script>
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <p id="box"></p>
+    <div class="cen">
+    <button onclick="start()">Start</button> 
+    <button onclick="stop()">Stop</button>
+    </div>
+
+<script>
+    function changeColor()
+        {
+            date=new Date();
+            hours=date.getHours();
+            minute=date.getMinutes();
+            seconds=date.getSeconds();
+            timing=date.toLocaleTimeString();
+            x=document.getElementById("box");
+            x.innerHTML=timing;
+            if(seconds%2==0)
+            {
+                x.className="add";
+            }
+            else
+            {
+                x.className="eve";
+            }
+        }
+    function start()
+     {
+         g=setInterval(changeColor, 1000);
+     }
+     function stop()
+     {
+        clearInterval(g);
+     }
+   
+</script>
+
+</body>
+</html>

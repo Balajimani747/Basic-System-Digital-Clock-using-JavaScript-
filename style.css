@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    block-size: auto;
+}
+
+.cen{
+    text-align: center;
+}
+
+button{
+    height: 1cm;
+    width: 2cm;
+
+}
+p{
+    background-color: aqua;
+    height: 2cm;
+    width: auto;
+    
+}
+.add{
+    color: brown;
+    text-align: center;
+}
+.eve{
+    color: black;
+    text-align: center;
+}
